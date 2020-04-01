@@ -50,7 +50,7 @@ if args.dir is not None:
 			print(filename + " was removed")
 			continue
 		else:
-			if path.endswith('.jpg') or path.endswith('.jpeg') or path.endswith('.xz'):
+			if path.endswith('.jpg') or path.endswith('.jpeg'):
 				file = cv2.imread(path)
 				if file is None:
 					print("Could not read input image")
